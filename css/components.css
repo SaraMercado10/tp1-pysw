@@ -314,3 +314,97 @@ h2 {
 .rating input:checked ~ label {
   color: gold;
 }
+
+/* FORMULARIO */
+.formulario {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.grupo {
+  position: relative;
+}
+
+.grupo input,
+.grupo textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text);
+}
+
+/* VALIDACION */
+.grupo input:valid,
+.grupo textarea:valid {
+  border-color: green;
+}
+
+.grupo input:invalid,
+.grupo textarea:invalid {
+  border-color: red;
+}
+
+/* LABEL */
+.grupo label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.grupo input:focus + label,
+.grupo textarea:focus + label,
+.grupo input:valid + label,
+.grupo textarea:valid + label {
+  top: -10px;
+  font-size: 0.8rem;
+  color: var(--primary);
+}
+
+/* BOTON */
+.btn {
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* SPINNER */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid white;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  display: none;
+  margin-left: 10px;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}

@@ -6,3 +6,14 @@
   from {opacity: 0; transform: translate(-50%, -60%);}
   to {opacity: 1; transform: translate(-50%, -50%);}
 }
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner.activo {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}

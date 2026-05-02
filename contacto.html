@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <h1 class="logo">Turismo</h1>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="agencias.html">Agencias</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <button id="darkModeToggle">🌙</button>
+    <button id="menuToggle">☰</button>
+  </div>
+</header>
+
+<section class="container contacto">
+  <h2>Contacto</h2>
+
+  <form id="formContacto" class="formulario">
+
+    <div class="grupo">
+      <input type="text" required>
+      <label>Nombre</label>
+    </div>
+
+    <div class="grupo">
+      <input type="email" required>
+      <label>Email</label>
+    </div>
+
+    <div class="grupo">
+      <textarea required></textarea>
+      <label>Mensaje</label>
+    </div>
+
+    <button type="submit" class="btn">
+      Enviar
+      <span class="spinner"></span>
+    </button>
+
+  </form>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h3>Mensaje enviado ✔</h3>
+    <p>Nos pondremos en contacto contigo.</p>
+    <button id="cerrarModal">Cerrar</button>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Turismo</p>
+    <p>Sara Mercado - Programación y Servicios Web</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -40,3 +40,28 @@ window.addEventListener("scroll", () => {
     }, 20);
   }
 });
+
+// FORMULARIO
+const form = document.getElementById("formContacto");
+const spinner = document.querySelector(".spinner");
+const modal = document.getElementById("modal");
+const cerrar = document.getElementById("cerrarModal");
+
+if (form) {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    spinner.classList.add("activo");
+
+    setTimeout(() => {
+      spinner.classList.remove("activo");
+      modal.style.display = "flex";
+    }, 2000);
+  });
+}
+
+if (cerrar) {
+  cerrar.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+}

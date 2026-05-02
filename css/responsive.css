@@ -68,3 +68,10 @@
     height: 260px;
   }
 }
+
+@media (max-width: 768px) {
+  .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+}
