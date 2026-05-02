@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencias</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Turismo</h1>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="agencias.html">Agencias</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <button id="darkModeToggle">🌙</button>
+            <button id="menuToggle">☰</button>
+        </div>
+    </header>
+
+    <section class="container agencias">
+        <h2>Agencias de Viaje</h2>
+
+        <div class="agencias-grid">
+            <div class="agencias-grid">
+
+                <!-- CARD 1 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="assets/images/a1.png">
+                            <h3>Travel Pro</h3>
+                        </div>
+                        <div class="flip-back">
+                            <p>Especialistas en viajes internacionales</p>
+                            <div class="rating">
+                                <input type="radio" name="r1" id="r1-5"><label for="r1-5">★</label>
+                                <input type="radio" name="r1" id="r1-4"><label for="r1-4">★</label>
+                                <input type="radio" name="r1" id="r1-3"><label for="r1-3">★</label>
+                                <input type="radio" name="r1" id="r1-2"><label for="r1-2">★</label>
+                                <input type="radio" name="r1" id="r1-1"><label for="r1-1">★</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="assets/images/a2.png">
+                            <h3>Explora</h3>
+                        </div>
+                        <div class="flip-back">
+                            <p>Viajes de aventura y naturaleza</p>
+                            <div class="rating">
+                                <input type="radio" name="r2" id="r2-5"><label for="r2-5">★</label>
+                                <input type="radio" name="r2" id="r2-4"><label for="r2-4">★</label>
+                                <input type="radio" name="r2" id="r2-3"><label for="r2-3">★</label>
+                                <input type="radio" name="r2" id="r2-2"><label for="r2-2">★</label>
+                                <input type="radio" name="r2" id="r2-1"><label for="r2-1">★</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="assets/images/a5.png">
+                            <h3>Luxury Trips</h3>
+                        </div>
+                        <div class="flip-back">
+                            <p>Experiencias premium</p>
+                            <div class="rating">
+                                <input type="radio" name="r3" id="r3-5"><label for="r3-5">★</label>
+                                <input type="radio" name="r3" id="r3-4"><label for="r3-4">★</label>
+                                <input type="radio" name="r3" id="r3-3"><label for="r3-3">★</label>
+                                <input type="radio" name="r3" id="r3-2"><label for="r3-2">★</label>
+                                <input type="radio" name="r3" id="r3-1"><label for="r3-1">★</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="assets/images/a7.png">
+                            <h3>Go Travel</h3>
+                        </div>
+                        <div class="flip-back">
+                            <p>Viajes económicos y accesibles</p>
+                            <div class="rating">
+                                <input type="radio" name="r4" id="r4-5"><label for="r4-5">★</label>
+                                <input type="radio" name="r4" id="r4-4"><label for="r4-4">★</label>
+                                <input type="radio" name="r4" id="r4-3"><label for="r4-3">★</label>
+                                <input type="radio" name="r4" id="r4-2"><label for="r4-2">★</label>
+                                <input type="radio" name="r4" id="r4-1"><label for="r4-1">★</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="assets/images/a3.png">
+                            <h3>World Tours</h3>
+                        </div>
+                        <div class="flip-back">
+                            <p>Destinos en todo el mundo</p>
+                            <div class="rating">
+                                <input type="radio" name="r5" id="r5-5"><label for="r5-5">★</label>
+                                <input type="radio" name="r5" id="r5-4"><label for="r5-4">★</label>
+                                <input type="radio" name="r5" id="r5-3"><label for="r5-3">★</label>
+                                <input type="radio" name="r5" id="r5-2"><label for="r5-2">★</label>
+                                <input type="radio" name="r5" id="r5-1"><label for="r5-1">★</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="assets/images/a4.png">
+                            <h3>Eco Travel</h3>
+                        </div>
+                        <div class="flip-back">
+                            <p>Turismo sustentable</p>
+                            <div class="rating">
+                                <input type="radio" name="r6" id="r6-5"><label for="r6-5">★</label>
+                                <input type="radio" name="r6" id="r6-4"><label for="r6-4">★</label>
+                                <input type="radio" name="r6" id="r6-3"><label for="r6-3">★</label>
+                                <input type="radio" name="r6" id="r6-2"><label for="r6-2">★</label>
+                                <input type="radio" name="r6" id="r6-1"><label for="r6-1">★</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+
+                    <!-- CARD 7 -->
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="assets/images/a6.png">
+                            <h3>Sky Travel</h3>
+                        </div>
+                        <div class="flip-back">
+                            <p>Especialistas en viajes aéreos y vuelos económicos</p>
+                            <div class="rating">
+                                <input type="radio" name="r7" id="r7-5"><label for="r7-5">★</label>
+                                <input type="radio" name="r7" id="r7-4"><label for="r7-4">★</label>
+                                <input type="radio" name="r7" id="r7-3"><label for="r7-3">★</label>
+                                <input type="radio" name="r7" id="r7-2"><label for="r7-2">★</label>
+                                <input type="radio" name="r7" id="r7-1"><label for="r7-1">★</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 8 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="assets/images/a8.png">
+                            <h3>Adventure Plus</h3>
+                        </div>
+                        <div class="flip-back">
+                            <p>Experiencias extremas y turismo de aventura</p>
+                            <div class="rating">
+                                <input type="radio" name="r8" id="r8-5"><label for="r8-5">★</label>
+                                <input type="radio" name="r8" id="r8-4"><label for="r8-4">★</label>
+                                <input type="radio" name="r8" id="r8-3"><label for="r8-3">★</label>
+                                <input type="radio" name="r8" id="r8-2"><label for="r8-2">★</label>
+                                <input type="radio" name="r8" id="r8-1"><label for="r8-1">★</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Turismo</p>
+            <p>Sara Mercado - Programación y Servicios Web</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
