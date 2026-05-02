@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinos</title>
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <h1 class="logo">Turismo</h1>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="agencias.html">Agencias</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <button id="darkModeToggle">🌙</button>
+    <button id="menuToggle">☰</button>
+  </div>
+</header>
+
+<section class="container filtros">
+  <h2>Filtrar destinos</h2>
+
+  <!-- INPUTS -->
+  <input type="radio" name="filtro" id="all" checked>
+  <input type="radio" name="filtro" id="cultural">
+  <input type="radio" name="filtro" id="naturaleza">
+  <input type="radio" name="filtro" id="playa">
+  <input type="radio" name="filtro" id="gastronomico">
+  <input type="radio" name="filtro" id="religioso">
+
+  <div class="filtro-labels">
+    <label for="all">Todos</label>
+    <label for="cultural">Cultural</label>
+    <label for="naturaleza">Naturaleza</label>
+    <label for="playa">Sol y Playa</label>
+    <label for="gastronomico">Gastronómico</label>
+    <label for="religioso">Religioso</label>
+  </div>
+
+  <!-- GALERIA -->
+  <div class="galeria">
+
+    <!-- CULTURAL -->
+    <article class="card destino cultural"><img src="assets/images/cultural1.webp"><div class="overlay">Cultural</div></article>
+    <article class="card destino cultural"><img src="assets/images/cultural2.webp"><div class="overlay">Cultural</div></article>
+    <article class="card destino cultural"><img src="assets/images/cultural3.webp"><div class="overlay">Cultural</div></article>
+
+    <!-- NATURALEZA -->
+    <article class="card destino naturaleza"><img src="assets/images/natural1.webp"><div class="overlay">Naturaleza</div></article>
+    <article class="card destino naturaleza"><img src="assets/images/natural2.jpg"><div class="overlay">Naturaleza</div></article>
+    <article class="card destino naturaleza"><img src="assets/images/natural3.jpg"><div class="overlay">Naturaleza</div></article>
+
+    <!-- PLAYA -->
+    <article class="card destino playa"><img src="assets/images/playa1.webp"><div class="overlay">Playa</div></article>
+    <article class="card destino playa"><img src="assets/images/playa2.webp"><div class="overlay">Playa</div></article>
+    <article class="card destino playa"><img src="assets/images/playa3.webp"><div class="overlay">Playa</div></article>
+
+    <!-- GASTRONOMICO -->
+    <article class="card destino gastronomico"><img src="assets/images/gastro1.webp"><div class="overlay">Gastronomía</div></article>
+    <article class="card destino gastronomico"><img src="assets/images/gastro2.webp"><div class="overlay">Gastronomía</div></article>
+    <article class="card destino gastronomico"><img src="assets/images/gastro3.webp"><div class="overlay">Gastronomía</div></article>
+
+    <!-- RELIGIOSO -->
+    <article class="card destino religioso"><img src="assets/images/religioso1.webp"><div class="overlay">Religioso</div></article>
+    <article class="card destino religioso"><img src="assets/images/religioso2.webp"><div class="overlay">Religioso</div></article>
+    <article class="card destino religioso"><img src="assets/images/religioso3.webp"><div class="overlay">Religioso</div></article>
+
+  </div>
+</section>
+
+<!-- TABLA -->
+<section class="container tabla">
+  <h2>Precios y Destinos</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Destino</th>
+        <th>Categoría</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Jujuy</td><td>Naturaleza</td><td>$200</td></tr>
+      <tr><td>Salta</td><td>Cultural</td><td>$250</td></tr>
+      <tr><td>Brasil</td><td>Playa</td><td>$500</td></tr>
+      <tr><td>Perú</td><td>Gastronomía</td><td>$400</td></tr>
+      <tr><td>Roma</td><td>Religioso</td><td>$600</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Turismo</p>
+    <p>Sara Mercado - Programación y Servicios Web</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

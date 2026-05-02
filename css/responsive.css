@@ -21,3 +21,44 @@
   }
 
 }
+
+@media (max-width: 768px) {
+
+  .galeria {
+    column-count: 1;
+  }
+
+  .tabla table,
+.tabla tbody,
+.tabla th,
+.tabla td,
+.tabla tr {
+  display: block;
+}
+
+/* 🔥 ocultar encabezado correctamente */
+.tabla thead {
+  display: none;
+}
+
+  .tabla tr {
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+  }
+
+  .tabla td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .tabla td::before {
+    position: absolute;
+    left: 1rem;
+    font-weight: bold;
+  }
+
+  .tabla td:nth-child(1)::before { content: "Destino"; }
+  .tabla td:nth-child(2)::before { content: "Categoría"; }
+  .tabla td:nth-child(3)::before { content: "Precio"; }
+}

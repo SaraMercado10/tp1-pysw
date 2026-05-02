@@ -115,3 +115,113 @@ h2 {
   text-align: center;
   margin-bottom: 1rem;
 }
+
+/* FILTROS */
+.filtros input {
+  display: none;
+}
+
+.filtro-labels {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.filtro-labels label {
+  background: var(--card-bg);
+  color: var(--text);
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  transition: 0.3s;
+}
+
+.filtro-labels label:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* GALERIA MASONRY */
+.galeria {
+  column-count: 3;
+  column-gap: 1rem;
+  margin-top: 2rem;
+}
+
+.destino {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.destino img {
+  width: 100%;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+/* OVERLAY MEJORADO */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0 0 12px 12px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  opacity: 0;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.destino:hover img {
+  transform: scale(1.1);
+}
+
+.destino:hover .overlay {
+  opacity: 1;
+}
+
+/* FILTRO FUNCIONAL */
+#cultural:checked ~ .galeria .destino:not(.cultural),
+#naturaleza:checked ~ .galeria .destino:not(.naturaleza),
+#playa:checked ~ .galeria .destino:not(.playa),
+#gastronomico:checked ~ .galeria .destino:not(.gastronomico),
+#religioso:checked ~ .galeria .destino:not(.religioso) {
+  display: none;
+}
+
+/* TABLA PRO */
+.tabla table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.tabla th {
+  background: var(--primary);
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+}
+
+.tabla td {
+  padding: 1rem;
+  text-align: center;
+  background: var(--card-bg);
+}
+
+.tabla tr:nth-child(even) td {
+  background: #0853b6;
+}
+
+.tabla tr:hover td {
+  background: var(--primary);
+  color: white;
+  transition: 0.3s;
+}
