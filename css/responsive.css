@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+
+  #menuToggle {
+    display: block;
+  }
+
+  .nav ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: var(--card-bg);
+    flex-direction: column;
+    width: 220px;
+    padding: 1rem;
+    display: none;
+    box-shadow: var(--shadow);
+  }
+
+  .nav ul.active {
+    display: flex;
+  }
+
+}

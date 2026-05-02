@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turismo - Home</title>
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <h1 class="logo">Turismo</h1>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="agencias.html">Agencias</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <button id="darkModeToggle">🌙</button>
+    <button id="menuToggle">☰</button>
+  </div>
+</header>    
+
+<section class="hero">
+  <video autoplay muted loop>
+    <source src="assets/videos/video.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay">
+    <h2>Explorá el mundo</h2>
+    <p>Descubrí destinos increíbles</p>
+  </div>
+</section>
+
+<section class="destinos container">
+  <h2>Destinos Destacados</h2>
+
+  <div class="cards">
+    <article class="card">
+      <img src="assets/images/playa.webp">
+      <div class="card-info"><h3>Playa</h3></div>
+    </article>
+
+    <article class="card">
+      <img src="assets/images/montania.webp">
+      <div class="card-info"><h3>Montaña</h3></div>
+    </article>
+  </div>
+</section>
+
+<section class="contador">
+  <h2><span id="contador">0</span>+ visitantes felices</h2>
+</section>
+
+<section class="testimonios container">
+  <h2>Opiniones</h2>
+
+  <div class="carousel">
+    <div class="slide">
+      <p>"Increíble experiencia, todo perfecto"</p>
+      <span>⭐⭐⭐⭐⭐</span>
+      <h4>- María</h4>
+    </div>
+
+    <div class="slide">
+      <p>"El mejor viaje de mi vida"</p>
+      <span>⭐⭐⭐⭐⭐</span>
+      <h4>- Juan</h4>
+    </div>
+
+    <div class="slide">
+      <p>"Excelente atención y destinos"</p>
+      <span>⭐⭐⭐⭐⭐</span>
+      <h4>- Laura</h4>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+
+    <form class="newsletter">
+      <input type="email" placeholder="Tu email" required>
+      <button>Suscribirse</button>
+    </form>
+
+    <p>© 2026 Turismo</p>
+    <p>Sara Mercado - Programación y Servicios Web</p>
+
+    <iframe 
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-65.3%2C-24.2%2C-65.2%2C-24.1&layer=mapnik"
+      loading="lazy">
+    </iframe>
+
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
