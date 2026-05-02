@@ -75,3 +75,41 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 768px) {
+
+  .tabla-precios,
+  .tabla-precios thead,
+  .tabla-precios tbody,
+  .tabla-precios th,
+  .tabla-precios td,
+  .tabla-precios tr {
+    display: block;
+  }
+
+  .tabla-precios thead {
+    display: none;
+  }
+
+  .tabla-precios tr {
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+  }
+
+  .tabla-precios td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .tabla-precios td::before {
+    position: absolute;
+    left: 1rem;
+    font-weight: bold;
+  }
+
+  .tabla-precios td:nth-child(1)::before { content: "Destino"; }
+  .tabla-precios td:nth-child(2)::before { content: "Duración"; }
+  .tabla-precios td:nth-child(3)::before { content: "Precio"; }
+  .tabla-precios td:nth-child(4)::before { content: "Incluye"; }
+}

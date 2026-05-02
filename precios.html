@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precios</title>
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <h1 class="logo">Turismo</h1>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="agencias.html">Agencias</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <button id="darkModeToggle">🌙</button>
+    <button id="menuToggle">☰</button>
+  </div>
+</header>
+
+<section class="container precios">
+  <h2>Comparador de Destinos</h2>
+
+  <!-- INFO -->
+  <section class="info-precios">
+    <h3>¿Qué incluyen nuestros paquetes?</h3>
+    <p>
+      Nuestros paquetes incluyen transporte, alojamiento y actividades según el destino.
+      Podés personalizar cada experiencia según tus preferencias.
+    </p>
+  </section>
+
+  <table class="tabla-precios">
+    <thead>
+      <tr>
+        <th>Destino</th>
+        <th>Duración</th>
+        <th>Precio</th>
+        <th>Incluye</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>Jujuy</td>
+        <td>3 días</td>
+        <td>$200</td>
+        <td><span class="tooltip">✔<span class="tooltip-text">Excursiones y hotel</span></span></td>
+      </tr>
+
+      <tr>
+        <td>Salta</td>
+        <td>4 días</td>
+        <td>$250</td>
+        <td><span class="tooltip">✔<span class="tooltip-text">Transporte y guía</span></span></td>
+      </tr>
+
+      <tr class="destacado">
+        <td>Caribe</td>
+        <td>7 días</td>
+        <td>$750</td>
+        <td><span class="tooltip">✔<span class="tooltip-text">All inclusive</span></span></td>
+      </tr>
+
+      <tr>
+        <td>Brasil</td>
+        <td>7 días</td>
+        <td>$500</td>
+        <td><span class="tooltip">✔<span class="tooltip-text">Hotel + playa</span></span></td>
+      </tr>
+
+      <tr>
+        <td>Perú</td>
+        <td>5 días</td>
+        <td>$400</td>
+        <td><span class="tooltip">✔<span class="tooltip-text">Tours gastronómicos</span></span></td>
+      </tr>
+
+      <tr>
+        <td>Roma</td>
+        <td>6 días</td>
+        <td>$600</td>
+        <td><span class="tooltip">✔<span class="tooltip-text">Visitas guiadas</span></span></td>
+      </tr>
+
+      <tr>
+        <td>Bariloche</td>
+        <td>5 días</td>
+        <td>$450</td>
+        <td><span class="tooltip">✔<span class="tooltip-text">Excursiones</span></span></td>
+      </tr>
+
+      <tr>
+        <td>Mendoza</td>
+        <td>4 días</td>
+        <td>$380</td>
+        <td><span class="tooltip">✔<span class="tooltip-text">Tour de bodegas</span></span></td>
+      </tr>
+
+      <tr>
+        <td>Miami</td>
+        <td>7 días</td>
+        <td>$900</td>
+        <td><span class="tooltip">✔<span class="tooltip-text">Hotel + playas</span></span></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <p class="nota">* Precios sujetos a cambios según temporada.</p>
+
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Turismo</p>
+    <p>Sara Mercado - Programación y Servicios Web</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
