@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <h1 class="logo">Turismo</h1>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="agencias.html">Agencias</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <button id="darkModeToggle">🌙</button>
+    <button id="menuToggle">☰</button>
+  </div>
+</header>
+
+<!-- BLOG -->
+<section class="container blog">
+
+  <h2>Blog de Destinos</h2>
+
+  <!-- INPUTS (CLAVE PARA FILTRO) -->
+  <input type="radio" name="tag" id="all" checked>
+  <input type="radio" name="tag" id="playa">
+  <input type="radio" name="tag" id="montana">
+  <input type="radio" name="tag" id="ciudad">
+
+  <!-- LABELS -->
+  <div class="filtros">
+    <label for="all">Todos</label>
+    <label for="playa">Playa</label>
+    <label for="montana">Montaña</label>
+    <label for="ciudad">Ciudad</label>
+  </div>
+
+  <!-- GRID -->
+  <div class="blog-grid">
+
+    <!-- PLAYA -->
+    <article class="post playa reveal">
+      <img src="assets/images/caribe.webp">
+      <h3>Caribe</h3>
+      <p>Playas paradisíacas.</p>
+    </article>
+
+    <article class="post playa reveal">
+      <img src="assets/images/soldiver.webp">
+      <h3>Brasil</h3>
+      <p>Sol y diversión.</p>
+    </article>
+
+    <article class="post playa reveal">
+      <img src="assets/images/cancun.webp">
+      <h3>Cancún</h3>
+      <p>Aguas cristalinas.</p>
+    </article>
+
+    <!-- MONTAÑA -->
+    <article class="post montana reveal">
+      <img src="assets/images/andes.jpg">
+      <h3>Andes</h3>
+      <p>Aventura extrema.</p>
+    </article>
+
+    <article class="post montana reveal">
+      <img src="assets/images/barilo.webp">
+      <h3>Bariloche</h3>
+      <p>Naturaleza única.</p>
+    </article>
+
+    <article class="post montana reveal">
+      <img src="assets/images/alpes.webp">
+      <h3>Alpes</h3>
+      <p>Paisajes nevados.</p>
+    </article>
+
+    <!-- CIUDAD -->
+    <article class="post ciudad reveal">
+      <img src="assets/images/roma.webp">
+      <h3>Roma</h3>
+      <p>Historia viva.</p>
+    </article>
+
+    <article class="post ciudad reveal">
+      <img src="assets/images/paris.webp">
+      <h3>París</h3>
+      <p>Ciudad del amor.</p>
+    </article>
+
+    <article class="post ciudad reveal">
+      <img src="assets/images/ny.webp">
+      <h3>New York</h3>
+      <p>La gran ciudad.</p>
+    </article>
+
+  </div>
+
+</section>
+
+<!-- COMENTARIOS -->
+<section class="comentarios container">
+  <h3>Comentarios</h3>
+
+  <div class="comentario">
+    <div class="avatar"></div>
+    <div>
+      <h4>María</h4>
+      <p>Excelente contenido, muy útil!</p>
+    </div>
+  </div>
+
+  <div class="comentario">
+    <div class="avatar"></div>
+    <div>
+      <h4>Juan</h4>
+      <p>Me encantaron los destinos, voy a viajar!</p>
+    </div>
+  </div>
+
+  <div class="comentario">
+    <div class="avatar"></div>
+    <div>
+      <h4>Laura</h4>
+      <p>Muy buena información.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Turismo</p>
+    <p>Sara Mercado - Programación y Servicios Web</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
